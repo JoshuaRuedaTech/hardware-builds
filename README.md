@@ -1,5 +1,40 @@
 # hardware-builds
 
+## Kali-Tail Wi-Fi Pn testing build
+# 🐍 Kali Linux on Raspberry Pi Zero W (Kali Tail) Setup & Troubleshooting
+
+## ✅ Goal
+Boot a portable Kali Linux image on the Raspberry Pi Zero W with working Wi-Fi for penetration testing or stealth use.
+
+---
+
+## 🔧 Flashing & Setup
+
+### 🖥️ 1. **Flash Kali Image**
+- Use [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or **BalenaEtcher**.
+- Choose the appropriate **Kali ARM image** for Raspberry Pi.
+- When flashing:
+  - ✅ Set **SSID** and **Wi-Fi Password**.
+  - ✅ Set **country code** (e.g., `US`).
+  - ✅ Enable **SSH** (optional but useful for headless setups).
+
+This step creates a working `/etc/wpa_supplicant/wpa_supplicant.conf` automatically.
+
+---
+
+## ⚠️ Wi-Fi Troubleshooting
+
+### 🧠 Symptom
+- Wi-Fi **interface exists** and **can scan** networks.
+- But **won't connect** to any SSID manually.
+
+### 🧪 Checklist
+
+- [x] **Confirmed interface exists**
+  ```bash
+  iw dev
+## END
+
 **Building and Setting up my Custom Gaming PC 250420**
 ## Parts List
 
